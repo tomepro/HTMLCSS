@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    height: 100vh; /* Ocupa toda la ventana */
+}
+
+.sidebar {
+    width: 30%;
+    background-color: #2a2f32;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-header {
+    padding: 20px;
+    background-color: #202c33;
+}
+
+.search-placeholder {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #40484f;
+    border-radius: 5px;
+    color: #a8a8a8;
+}
+.profile-and-text {
+    display: flex;
+    align-items: center; /* Alinea verticalmente la imagen y el texto */
+}
+
+.profile-and-text h2 {
+    margin-left: 10px; /* Espacio entre la imagen y el texto */
+    font-size: 18px; /* Ajusta el tamaño del texto si es necesario */
+    color: white;
+}
+
+.chat-list {
+    overflow-y: auto; /* Permite el scroll vertical en la lista de chats */
+    padding-bottom: 10px; /* Espacio para evitar que el último chat quede pegado al borde */
+}
+
+.chat-item {
+    display: flex;
+    padding: 15px;
+    border-bottom: 1px solid #40484f;
+}
+
+.chat-item img {
+    width: 40px; /* Ajusta el tamaño aquí */
+    height: 40px; /* Ajusta el tamaño aquí */
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover; /* Para que la imagen no se deforme */
+}
+
+.img_perfil {
+    width: 60px; /* Ajusta el tamaño aquí */
+    height: 60px; /* Ajusta el tamaño aquí */
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover; /* Para que la imagen no se deforme */
+}
+
+.chat-info h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.chat-info p {
+    font-size: 14px;
+    color: #a8a8a8;
+}
+
+.chat-window {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-header {
+    background-color: #202c33;
+    padding: 20px;
+    color: white;
+}
+
+.chat-body {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #e5ddd5;
+    overflow-y: auto; /* Permite scroll en la ventana de chat si hay muchos mensajes */
+}
+
+.message_sent {
+    margin-left: 60%;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    max-width: 40%;
+    background-color: #dcf8c6;
+}
+
+.message_received {
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    max-width: 40%; /* Cambiado a 40% para mantener coherencia con el diseño */
+    background-color: #fff;
+    align-self: flex-start;
+}
+
+.chat-footer {
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+
+.footer-placeholder {
+    margin-left: 5%;
+    margin-right: 5%;
+
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 20px;
+    color: #a8a8a8;
+}
